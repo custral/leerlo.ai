@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App theme tokens */
+:root {
+  --brand: 24 92% 58%; /* orange */
+  --ink: 222 47% 11%;
+  --paper: 210 20% 98%;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-slate-800 antialiased;
+}
+
+.container-px {
+  @apply px-4 sm:px-6 lg:px-8;
+}
+
+.btn {
+  @apply inline-flex items-center gap-2 rounded-lg px-4 py-2 font-medium transition-colors;
+}
+.btn-primary {
+  @apply bg-orange-500 text-white hover:bg-orange-600 shadow;
+}
+.btn-ghost {
+  @apply bg-transparent text-slate-700 hover:bg-slate-100;
+}
+
+.card {
+  @apply rounded-2xl border border-slate-200 bg-white shadow-sm;
+}
